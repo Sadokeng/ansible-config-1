@@ -13,7 +13,7 @@
     - name: Install remi repo
       ansible.builtin.yum:
         name:
-          - http://rpms.remirepo.net/enterprise/remi-release-8.rpm
+          #- http://rpms.remirepo.net/enterprise/remi-release-8.rpm
           - dnf-utils
         disable_gpg_check: yes
 
