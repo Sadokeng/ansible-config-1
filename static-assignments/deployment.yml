@@ -8,15 +8,13 @@
       ansible.builtin.yum:
         name: 
           - https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-          
-        disable_gpg_check: yes
 
     - name: Install remi repo
       ansible.builtin.yum:
         name:
           - http://rpms.remirepo.net/enterprise/remi-release-8.rpm
           - dnf-utils
-         disable_gpg_check: yes
+        disable_gpg_check: yes
 
 
     
